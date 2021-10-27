@@ -3,8 +3,9 @@
 
 @font-face {
     font-family: "Android";
-    src: url("/Firstsitewithcss/fontes/idroid.otf");
+    src: url("../fontes/idroid.otf") format('opentype');
 }
+
 *{
   box-sizing: border-box; 
   margin: 0; 
@@ -23,7 +24,7 @@ body{
 
     --fontepadrao: arial,Verdana, Helvetica, sans-serif;
     --fontedestaque: 'Bebas Neue', cursive;
-    --fontandroid: "Android", cursive;
+    --fontandroid: 'Android', cursive;
 }
 
 header{
@@ -45,6 +46,7 @@ header > h1{
 
 nav{
     background-color: var(--verdeprincipal);
+    padding: 2px;
 }
 nav a{
     text-decoration: none;
@@ -61,15 +63,43 @@ main{
     max-width: 1000px;
     margin: auto;
     padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px ;
 }
 main img{
     width: 100%;
+   
 }
+main p{
+    margin: 10px;
+}
+
+main a{
+color: var(--verdeazulado);
+text-decoration: none;
+font-weight: bold;
+}
+
 main img.bugdroid{
     width: 50%;
     display: block;
     margin: auto;
 }
+
+main h1{
+    font-family: var(--fontandroid);
+    color: var(--verdeazulado);
+    text-align: center;
+    margin-bottom: 10px;
+}
+main h2{
+    background-color:#80e2a99f;
+    font-family: var(--fontandroid);
+    color: var(--verdeazulado);
+    margin: 8px 0;
+}
+
+
 
 footer{
     background-color: var(--verdeazulado);
